@@ -1,16 +1,14 @@
-Radeon™ GPU Profiler V2.6
+Radeon™ GPU Profiler V2.6.1
 ---------------------------
 
-V2.6 Changes
+V2.6.1 Changes
 ---------------------------
 
-1) Support for additional AMD RDNA™ 4 hardware
-2) Support for additional AMD RDNA 3.5-based APUs
-3) Profiles captured on RDNA 3-based or RDNA 4-based hardware will now include additional memory-related counters
-4) The pipeline state pane will now indicate if dynamic VGPR allocation is used in a shader (for profiles captured on RDNA 4-based hardware)
-5) Fixed a crash when loading some .rgp files with ExecuteIndirect events
-6) Fix missing instruction timing for some events
-7) Bug/stability fixes
+1) Fix several disassembler crashes when opening some profiles
+ - https://github.com/GPUOpen-Tools/radeon_gpu_profiler/issues/120
+ - https://github.com/GPUOpen-Tools/radeon_gpu_profiler/issues/121
+2) Fix an issue with unrecognized instructions in the ISA view for some RDNA 4 profiles with raytracing pipelines
+3) Fix an issue with incorrectly-reported HW Utilization in the Instruction timing pane for some profiles
 
 Known Issues
 ---------------------------
@@ -45,6 +43,17 @@ Known Issues
 
 Release Notes History
 ---------------------------
+
+V2.6 Changes
+---------------------------
+
+1) Support for additional AMD RDNA™ 4 hardware
+2) Support for additional AMD RDNA 3.5-based APUs
+3) Profiles captured on RDNA 3-based or RDNA 4-based hardware will now include additional memory-related counters
+4) The pipeline state pane will now indicate if dynamic VGPR allocation is used in a shader (for profiles captured on RDNA 4-based hardware)
+5) Fixed a crash when loading some .rgp files with ExecuteIndirect events
+6) Fix missing instruction timing for some events
+7) Bug/stability fixes
 
 V2.5 Changes
 ---------------------------
